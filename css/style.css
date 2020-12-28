@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Fredoka+One&family=Pinyon+Script&display=swap");
+:root {
+  --font: "Clicker Script", cursive;
+  --cyan: rgb(9, 218, 255) !important;
+  --black: #000 !important;
+  --grey: #f1f1f1 !important;
+  --txt: "PT Sans", sans-serif;
+  --title: "Fredoka One", cursive;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+i,
+button {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #cfcaca;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(199, 3, 255, 1),
+    rgba(95, 3, 255, 1)
+  );
+  border-radius: 10px;
+}
+.navbar {
+  background-color: rgba(187, 3, 255);
+}
+.nav-brand,
+.nav-brand:hover {
+  text-decoration: none;
+  font-family: var(--font);
+  color: #fff;
+  font-weight: bolder;
+  text-shadow: 0px 1px #000;
+}
+.nav-brand span {
+  color: var(--cyan);
+}
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  font-size: 30px !important;
+}
+.navbar-toggler i {
+  color: #fff;
+}
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-family: var(--title);
+  text-shadow: 0px 1px 1px #000;
+} /*
+.active::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 50px;
+  background-image: url("")
+  background-repeat: no-repeat;
+  transform: translate(-170%, -30%);
+}
+active::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+    transform: translateY(350%);
+    background-color: rgb(90,0,149);
+}*/
+#home {
+  padding-top: 20px;
+  background-color: rgba(95, 3, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(95, 3, 255, 1) 0%,
+    rgba(199, 3, 255, 1)
+  );
+}
+.title {
+  color: #fff;
+  text-shadow: 1px 2px 3px #000;
+  font-family: var(--title);
+}
+.sub-title {
+  font-family: var(--title);
+}
+p {
+  font-size: 20px;
+  font-family: var(--txt);
+}
+#home .input-group-append {
+  margin-left: -18px;
+  z-index: 12;
+  box-shadow: 1px 2px 3px #000;
+}
+.explore {
+  border: none !important;
+  outline: none !important;
+  background: linear-gradient(
+    0deg,
+    rgba(95, 3, 255, 1) 0%,
+    rgba(199, 3, 255, 1) 100%
+  );
+}
+.explore:focus {
+  background-color: #fff;
+  border-color: rgb(90, 0, 149) !important;
+  outline: none;
+  z-index: -1;
+  box-shadow: 0 0 0 0.2rem rgb(89, 0, 149, 0.404) !important;
+}
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: rgb(90, 0, 149) !important;
+  outline: none;
+  z-index: -1;
+  box-shadow: 0 0 0 0.2rem rgb(89, 0, 149, 0.404) !important;
+}
+.social-media i {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.social-media li {
+  list-style: none;
+}
+.social-media {
+  font-size: 33px;
+}
+#person-img {
+  width: 100%;
+  height: 408px;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#person-img::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  border: 70px solid rgb(90, 0, 149);
+  z-index: 0;
+  transform: translate(0, -15%) !important;
+}
+/*
+#person-img::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  border: 70px solid rgb(255, 255, 255);
+  transform: translate(5, -13%) !important;
+}*/
+#about,
+#features {
+  padding-top: 20px;
+}
+.gallery-pic-1 {
+  border-radius: 15px !important;
+  height: 360px !important;
+  background-image: url("https://i.pinimg.com/originals/40/39/6a/40396a623b1753982b32ab2f82d19010.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.visit {
+  border: none !important;
+  outline: none !important;
+  background: linear-gradient(
+    0deg,
+    rgba(95, 3, 255, 1) 0%,
+    rgba(199, 3, 255, 1) 100%
+  );
+}
+.visit:focus {
+  background-color: #fff;
+  border-color: rgb(90, 0, 149) !important;
+  outline: none;
+  z-index: -1;
+  box-shadow: 0 0 0 0.2rem rgb(201, 157, 255, 1) !important;
+}
+.galleryOne > div,
+.gallerySecond > div,
+.galleryThird > div {
+  border-radius: 15px !important;
+  height: 360px !important;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.galleryOne > div:nth-child(1) {
+  background-image: url("https://i.pinimg.com/originals/a2/28/4b/a2284b91b2d1e23ac09f86b272441061.jpg");
+}
+.galleryOne > div:nth-child(2) {
+  background-image: url("https://i.pinimg.com/originals/dd/11/9d/dd119dde0ac2a597ade30315c2c58a31.jpg");
+}
+.gallerySecond > div:nth-child(1) {
+  background-image: url("https://d3lzjswxslh72s.cloudfront.net/article-20182507510728267000.jpg");
+}
+.gallerySecond > div:nth-child(2) {
+  background-image: url("https://synergyspanish.com/wp-content/uploads/2018/06/Keep-yourself-young-with-Spanish.jpg");
+}
+.gallerySecond > div:nth-child(3) {
+  background-image: url("https://i.ebayimg.com/00/s/ODAwWDgwMA==/z/eT4AAOSw9y1facHI/$_3.JPG");
+}
+/*Features */
+.gallery-pic-2 {
+  border-radius: 15px !important;
+  height: 360px !important;
+  background-image: url("https://i.pinimg.com/originals/40/39/6a/40396a623b1753982b32ab2f82d19010.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -110px 0px;
+}
+.galleryThird > div:nth-child(1) {
+  background-image: url("https://i.pinimg.com/236x/0f/16/13/0f16130932e785dc521fa887567f5429.jpg");
+}
+.galleryThird > div:nth-child(2) {
+  background-image: url("https://i.pinimg.com/564x/b3/3a/85/b33a85fcc49db85958c216dddd51ca5c.jpg");
+  background-size: 100% 100%;
+}
+.galleryThird > div:nth-child(3) {
+  background-image: url("https://i.pinimg.com/originals/fa/94/95/fa9495090cf779198ff5feb91c29b16b.jpg");
+}
+.card-deck > .card {
+  height: 350px;
+  cursor: pointer;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-deck .bridal {
+  background-image: url("https://i.pinimg.com/originals/a4/29/77/a42977cc12743ad88326dcb97e51af15.jpg");
+}
+.card-deck .face {
+  background-image: url("https://cdn2.stylecraze.com/wp-content/uploads/2015/05/211-facial-kits-for-glowing-skin-avaiable-in-india_95018209.jpg");
+  background-position-x: -90px;
+}
+.card-deck .hair-style {
+  background-image: url("https://www.naturals.in/wp-content/uploads/2018/12/about-img.png");
+}
+.card-deck .body-massage {
+  background-image: url("https://www.thetherapycentre.com/wp-content/uploads/8542612_s.jpg");
+  background-position-x: -90px;
+}
+#services,
+#contact {
+  padding-top: 80px;
+}
+/*contact*/
+.foot-media {
+  font-size: 28px;
+}
+/*footer */
+.footer {
+  margin-top: -35px;
+}
+.foot-title {
+  font-family: var(--font);
+  color: #fff;
+}
+footer i,
+footer p {
+  font-size: 20px;
+  color: #cfcaca;
+}
+.media li i {
+  font-size: 30px;
+}
+.media li,
+.foot-nav li {
+  list-style: none;
+  color: #cfcaca !important;
+  font-size: 18px;
+}
+/* Media Query */
+
+@media only screen and(max-width:600px) {
+  .border-left-0 p {
+    font-size: 18px;
+  }
+  .logo {
+    padding: 24px 10px;
+    z-index: 100;
+  }
+  .custom-logo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    transform: translateX(-85%);
+    padding: 0px 10px;
+    height: 0px;
+    width: 160px;
+    animation: customizelogo 0.5s linear forwards 1;
+    background-color: rgb(90, 0, 149);
+    clip-path: polygon(0 0, 100% 0%, 100% 94%, 50% 100%, 0 94%);
+    z-index: -1;
+  }
+  /*navigation animation */
+  @keyframes customizelogo {
+    from {
+      height: 0px;
+      padding: 0px 10px;
+    }
+    to {
+      height: 537px;
+      padding: 20px 10px;
+    }
+  }
+}
+@media only screen and(max-width:992px) {
+  .collapse {
+    display: block !important;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(199, 3, 255, 1),
+      rgba(95, 3, 255, 1)
+    );
+    position: absolute;
+    top: 79px;
+    margin-left: 12px;
+    padding-left: 35px;
+    text-align: center;
+    width: 150px;
+    height: 0px;
+    transition: 0.5s;
+    z-index: 0;
+    clip-path: polygon(0 0, 100% 0%, 100% 94%, 50% 100%, 0 94%);
+  }
+  .custom-collapse {
+    height: 450px !important;
+  }
+}
+@media only screen and(min-width:992px) {
+  .navbar-nav li {
+    margin: 0;
+  }
+}
